@@ -48,30 +48,4 @@ while (entrada != "Sair") {
   entrada = prompt("Digite um nome");
 }
 
-// Exemplo 4: Inserir valores, e exibir resultados de soma e média a cada novo valor inserido.
-// Infelizmente esse eu não consegui fazer 😭
 
-function calcularSomaEMedia() {
-  let soma = 0;
-
-  // Loop que irá rodar 3 vezes
-  for (let i = 1; i <= 3; i++) {
-    let valorString = prompt("Insira o valor " + i + ":");
-    let valor = parseFloat(valorString);
-
-    // Verifica se o valor é um número
-    if (!isNaN(valor)) {
-      soma += valor; 
-    } else {
-      alert("Valor inválido. Por favor, insira um número");
-      // Decrementa o contador para repetir a iteração
-      i--;
-    }
-  }
-
-  let media = soma / 3; 
-  console.log("A soma dos valores é: " + soma);
-  console.log("A média dos valores é: " + media);
-}
-
-calcularSomaEMedia();
